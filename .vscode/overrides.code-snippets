@@ -1,0 +1,11 @@
+{
+	"Override method with super": {
+	  "prefix": "override",
+	  "body": [
+		"override ${1:methodName}(${2:args}): ${3:returnType} {",
+		"  return super.$1($2);",
+		"}"
+	  ],
+	  "description": "Override parent class method with a super call as a skeleton override"
+	}
+  }

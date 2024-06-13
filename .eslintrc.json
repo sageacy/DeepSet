@@ -1,0 +1,40 @@
+{
+    "root": true,
+    "plugins": [ "import", "@typescript-eslint" ],
+    "extends": [
+      "airbnb-typescript/base"
+    ],
+    "include": ["src/**/*","__tests__/**/*","./jest.config.js"],
+    "ignorePatterns": ["dist/**/*.js"],
+    "env": {
+      "node": true,
+      "browser": true,
+      "commonjs": true,
+      "es2021": true,
+      "jest": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": ["./tsconfig.json"],
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "@typescript-eslint/no-floating-promises": ["error",{}],
+      "@typescript-eslint/no-misused-promises": ["error",{}],
+      "indent": [ "error", 2, {"ignoreComments": true} ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "import/extensions": ["error", "ignorePackages"],
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    }
+  }

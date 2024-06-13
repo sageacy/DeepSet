@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "skipLibCheck": true, //Skip node_modules type checking
+    "target": "ES2020", //Compile target
+    "lib": ["ES2020"], //Tell TypeScript what built-in types to include
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "incremental": true,
+    "importsNotUsedAsValues": "remove",
+
+    /* Module system: */
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    /* Import options: */
+    "allowJs": true, //Allow import .js
+    "resolveJsonModule": true, //Allow import .json
+    "allowSyntheticDefaultImports": true,
+
+    /* Strictness: */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": false,
+
+    /* Directory */
+    "outDir": "./dist/",
+    "rootDir": "./",
+    "baseUrl": "./src"
+  },
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true,
+    "files": true,
+    "experimentalResolver": true
+  },
+  "include": ["src/**/*"],
+  "exclude": [""]
+}
