@@ -1,5 +1,5 @@
 {
-  "name": "deep-collect",
+  "name": "deepset",
   "version": "1.0.0",
   "description": "Deep identity Set and Map classes for TypeScript and JavaScript",
   "main": "./dist/index.cjs",
